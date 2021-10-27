@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/drum.jpg');
+  background-image: url('./background_black.jpg');
   font-family: var(--fontAsap);
 }
 
@@ -16,7 +16,7 @@ code {
 
 :root {
   --greenSeaweed: #f5cb5c;
-  --greenSeaweedTransparent: gray;
+  --greenSeaweedTransparent: rgba(0, 0, 0, 0.3);
   --blueQueen: rgba(69, 105, 144, 1);
   --blue: #f2f2f2bd;
   --blueQueenTransparent: rgba(69, 105, 144, 0.1);
