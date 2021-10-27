@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('/drum.jpg');
+  font-family: var(--fontAsap);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --greenSeaweed: #f5cb5c;
+  --greenSeaweedTransparent: gray;
+  --blueQueen: rgba(69, 105, 144, 1);
+  --blue: #f2f2f2bd;
+  --blueQueenTransparent: rgba(69, 105, 144, 0.1);
+  --redFire: #424442;
+  --redFireTransparent: #f5cc5c6b;
+  --redFireDarker: #242423;
+
+  --fontAsap: 'Asap', sans-serif;
 }

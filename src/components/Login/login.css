@@ -1,0 +1,101 @@
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 7px 10px var(--greenSeaweedTransparent);
+}
+
+.login::before, .login::after {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+}
+  
+  .login::before {
+    left: 65%;
+    bottom: -100%;
+    background-color: var(--blueQueen);
+    opacity: 15%;
+    animation: wawes 6s linear infinite;
+  }
+  
+  .login::after {
+    left: 55%;
+    bottom: -100%;
+    background-color: var(--greenSeaweed);
+    opacity: 20%;
+    animation: wawes 7s linear infinite;
+  }
+  
+input { 
+    outline: none;
+    font-family: var(--fontAsap);
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: var(--blue);
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+}
+
+input[name="firstname"], input[name="lastname"] {
+  width: 45%;
+}
+  
+button {
+    font-family: var(--fontAsap);
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: var(--redFire);
+    transition: background-color 300ms;
+}
+
+button:hover {
+    background-color: var(--redFireDarker);
+  }
+
+@keyframes wawes {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+a {
+  text-decoration: none;
+  color: rgba(white, 0.6);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+.sign {
+    font-size: 35px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    width: 100%;
+}
