@@ -1,5 +1,8 @@
 import React from 'react';
 import './navbar.css';
+import { MdHome, MdLogout } from "react-icons/md";
+import { AiOutlineSchedule, AiOutlineTable } from 'react-icons/ai';
+import { GiMetronome } from 'react-icons/gi';
 import {
     Link
   } from "react-router-dom";
@@ -7,25 +10,14 @@ import {
 
 function Navbar() {
 
-    const closeNav = () => document.getElementById("sidenav").style.width = "0px";
-    const openNav = () => document.getElementById("sidenav").style.width = "250px";
-
     return (
-        <div>
-            <ul id="sidenav" className="sidenav">
-                <button className="closebtn" onClick={closeNav}>x</button>
-                <li>
-                    <Link to="/">Strona główna</Link>
-                </li>
-                <li>
-                    <Link to="/schedule">Twój plan</Link>
-                </li>
-                <li>
-                    <Link to="/login">Wyloguj</Link>
-                </li>
-            </ul>
-        <span className="opennav" onClick={openNav}>&#9776;</span>
-      </div>
+        <div id="sidenav">
+            <Link className="nav-button" to="/"><MdHome/></Link>
+            <Link className="nav-button" to="/schedule"><AiOutlineSchedule/></Link>
+            <Link className="nav-button" to="/tracer"><AiOutlineTable/></Link>
+            <Link className="nav-button" to="/metronome"><GiMetronome/></Link>
+            <Link className="nav-button" to="/login"><MdLogout/></Link>
+        </div>
     );
 }
 

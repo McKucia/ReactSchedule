@@ -31,7 +31,7 @@
     left: 65%;
     bottom: -100%;
     background-color: var(--blueQueen);
-    opacity: 15%;
+    opacity: 5%;
     animation: wawes 6s linear infinite;
   }
   
@@ -39,7 +39,7 @@
     left: 55%;
     bottom: -100%;
     background-color: var(--greenSeaweed);
-    opacity: 20%;
+    opacity: 10%;
     animation: wawes 7s linear infinite;
   }
   

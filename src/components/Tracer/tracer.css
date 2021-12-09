@@ -1,0 +1,26 @@
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+.container {
+    padding-top: 40px;
+}
+
+.table {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.table > tbody > tr:last-child > td {
+    border-style: none;
+}
+
+.table input {
+    background-color: white;
+}
+
+button {
+    border-radius: 5px;
+}

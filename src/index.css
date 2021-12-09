@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./background_black.jpg');
+  min-height: 100vh;
+  background-image: url("./assets/drum.jpg");
   font-family: var(--fontAsap);
 }
 
@@ -14,8 +15,13 @@ code {
     monospace;
 }
 
+body > #root > div {
+  height: 100vh;
+}
+
 :root {
   --greenSeaweed: #f5cb5c;
+  --red: #ff5050;
   --greenSeaweedTransparent: rgba(0, 0, 0, 0.3);
   --blueQueen: rgba(69, 105, 144, 1);
   --blue: #f2f2f2bd;
@@ -23,6 +29,5 @@ code {
   --redFire: #424442;
   --redFireTransparent: #f5cc5c6b;
   --redFireDarker: #242423;
-
   --fontAsap: 'Asap', sans-serif;
 }
